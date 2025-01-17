@@ -14,5 +14,10 @@ describe("Password validation tests", function() {
             expect(result).toBe(false);
         });
 
+        it("given null should return false", function() {
+            const result = main.validatePasswordLength(null);
+            expect(result).toBe(false);
+        });
+
     });
 });
