@@ -19,5 +19,9 @@ describe("Password validation tests", function() {
             expect(result).toBe(false);
         });
 
+        it("given password with length 8 should return true", function() {
+            const result = main.validatePasswordLength("12345678");
+            expect(result).toBe(true);
+        });
     });
 });
