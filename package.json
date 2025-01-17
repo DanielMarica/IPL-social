@@ -1,0 +1,15 @@
+{
+    "name": "test-jasmine",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "app.js",
+    "scripts": {
+        "test": "jasmine spec/appSpec.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "jasmine": "^5.4.0"
+    }
+}
