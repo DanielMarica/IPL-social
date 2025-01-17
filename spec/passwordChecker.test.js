@@ -23,6 +23,12 @@ describe("Password validation tests", function() {
             const result = main.validatePasswordLength("Abcd1234");
             expect(result).toBe(true);
         });
+    });
 
+    describe("Password special character validation", function() {
+        it("given password without special char should return false", function() {
+            const result = main.validatePasswordSpecialChar("Abcd1234");
+            expect(result).toBe(false);
+        });
     });
 });
