@@ -39,6 +39,10 @@ describe("Password validation tests", function() {
             const result = main.validatePasswordSpecialChar(null);
             expect(result).toBe(false);
         });
+        it("given password with special char should return true", function() {
+            const result = main.validatePasswordSpecialChar("abc@123ABC");
+            expect(result).toBe(true);
+        });
     });
 
 });
