@@ -68,4 +68,12 @@ describe("Password validation tests", function() {
 
         
     });
+
+    describe("Password IPL validation", function() {
+        it("given password with IPL in uppercase should return false", function() {
+            const result = main.validatePasswordNoIPL("testIPL123!");
+            expect(result).toBe(false);
+        });
+
+    });
 });

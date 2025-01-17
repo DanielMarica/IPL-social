@@ -22,4 +22,11 @@ export class Main {
         const hasNumber = /\d/;
         return hasNumber.test(password);
     }
+
+    validatePasswordNoIPL(password) {
+        if (!password || typeof password !== 'string') {
+            return false;
+        }
+        return !password.toLowerCase().includes('ipl');
+    }
 }
