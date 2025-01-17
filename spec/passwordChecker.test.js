@@ -60,6 +60,11 @@ describe("Password validation tests", function() {
             const result = main.validatePasswordNumber(null);
             expect(result).toBe(false);
         });
+        
+        it("given password with number should return true", function() {
+            const result = main.validatePasswordNumber("Abcd@1xyz");
+            expect(result).toBe(true);
+        });
 
         
     });
