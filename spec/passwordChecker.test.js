@@ -74,6 +74,10 @@ describe("Password validation tests", function() {
             const result = main.validatePasswordNoIPL("testIPL123!");
             expect(result).toBe(false);
         });
+        it("given password with ipl in lowercase should return false", function() {
+            const result = main.validatePasswordNoIPL("testipl123!");
+            expect(result).toBe(false);
+        });
 
     });
 });
