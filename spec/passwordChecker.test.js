@@ -35,6 +35,10 @@ describe("Password validation tests", function() {
             const result = main.validatePasswordSpecialChar("");
             expect(result).toBe(false);
         });
+        it("given null should return false", function() {
+            const result = main.validatePasswordSpecialChar(null);
+            expect(result).toBe(false);
+        });
     });
 
 });
