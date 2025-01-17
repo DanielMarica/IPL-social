@@ -90,6 +90,10 @@ describe("Password validation tests", function() {
             const result = main.validatePasswordNoIPL("");
             expect(result).toBe(false);
         });
+        it("given null should return false", function() {
+            const result = main.validatePasswordNoIPL(null);
+            expect(result).toBe(false);
+        });
 
     });
 });
