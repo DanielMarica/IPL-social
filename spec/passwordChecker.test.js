@@ -50,6 +50,11 @@ describe("Password validation tests", function() {
             const result = main.validatePasswordNumber("Abcd@xyz");
             expect(result).toBe(false);
         });
+        
+        it("given empty string should return false", function() {
+            const result = main.validatePasswordNumber("");
+            expect(result).toBe(false);
+        });
 
         
     });
