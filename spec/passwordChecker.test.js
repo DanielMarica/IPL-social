@@ -78,6 +78,10 @@ describe("Password validation tests", function() {
             const result = main.validatePasswordNoIPL("testipl123!");
             expect(result).toBe(false);
         });
+        it("given password with IpL in mixed case should return false", function() {
+            const result = main.validatePasswordNoIPL("testIpL123!");
+            expect(result).toBe(false);
+        });
 
     });
 });
