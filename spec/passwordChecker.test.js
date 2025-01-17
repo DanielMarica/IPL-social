@@ -5,7 +5,7 @@ describe("Password validation tests", function() {
     
     describe("Password length validation", function() {
         it("given password with length 7 should return false", function() {
-            const result = main.validatePasswordLength("1234567");
+            const result = main.validatePasswordLength("Ab12xyz");
             expect(result).toBe(false);
         });
 
