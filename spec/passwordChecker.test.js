@@ -8,5 +8,11 @@ describe("Password validation tests", function() {
             const result = main.validatePasswordLength("1234567");
             expect(result).toBe(false);
         });
+
+        it("given empty string should return false", function() {
+            const result = main.validatePasswordLength("");
+            expect(result).toBe(false);
+        });
+
     });
 });
