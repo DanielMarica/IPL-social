@@ -45,4 +45,12 @@ describe("Password validation tests", function() {
         });
     });
 
+    describe("Password number validation", function() {
+        it("given password without number should return false", function() {
+            const result = main.validatePasswordNumber("Abcd@xyz");
+            expect(result).toBe(false);
+        });
+
+        
+    });
 });

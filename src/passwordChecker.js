@@ -14,4 +14,12 @@ export class Main {
         const specialChars = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]+/;
         return specialChars.test(password);
     }
+
+    validatePasswordNumber(password) {
+        if (!password || typeof password !== 'string') {
+            return false;
+        }
+        const hasNumber = /\d/;
+        return hasNumber.test(password);
+    }
 }
