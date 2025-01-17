@@ -82,6 +82,10 @@ describe("Password validation tests", function() {
             const result = main.validatePasswordNoIPL("testIpL123!");
             expect(result).toBe(false);
         });
+        it("given valid password without IPL should return true", function() {
+            const result = main.validatePasswordNoIPL("Test123!");
+            expect(result).toBe(true);
+        });
 
     });
 });
